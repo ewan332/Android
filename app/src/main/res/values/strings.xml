@@ -2,4 +2,8 @@
     <string name="app_name">demo1</string>
     <string name="euro">euro</string>
     <string name="dollar">dollar</string>
+    <string name="Euro_Dollar"><![CDATA[Euro <-> Dollar]]></string>
+    <string name="Euro_Yen"><![CDATA[Euro <-> Yen]]></string>
+    <string name="Dollar_Yen"><![CDATA[Dollar <-> Yen]]></string>
+
 </resources>

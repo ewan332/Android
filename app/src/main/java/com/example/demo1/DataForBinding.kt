@@ -1,6 +1,8 @@
 package com.example.demo1
 
 data class DataForBinding(
+    var labelHaut : String? = null,
+    var labelBas :String ? = null,
     var resultatHaut : Double? = null,
     var resultatBas : Double? = null
 

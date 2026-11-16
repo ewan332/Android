@@ -43,6 +43,27 @@
                               android:inputType="number|numberDecimal" android:ems="10" android:id="@+id/editTextBas"
                               android:layout_weight="10" tools:text="@{infoIhm.dataForBing.resultatBasformatted}"/>
                 </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="106dp"
+                        android:layout_height="380dp">
+                    <RadioGroup
+                            android:layout_width="169dp"
+                            android:layout_height="357dp">
+                        <RadioButton
+                                android:text="@string/Euro_Dollar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/radioButton"/>
+                        <RadioButton
+                                android:text="@string/Euro_Yen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/radioButton2"/>
+                        <RadioButton
+                                android:text="@string/Dollar_Yen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/radioButton3"/>
+                    </RadioGroup>
+                </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
