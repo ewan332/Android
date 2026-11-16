@@ -9,16 +9,19 @@ class DataForBindingViewModel : ViewModel() {
     val dataForBing : LiveData<DataForBinding> = _dataForBing
 
     init {
-        _dataForBing.value = DataForBinding(0.0,0.0)
+        _dataForBing.value = DataForBinding("Euro","Dollar")
     }
 
     fun updateDataForBing(newData: DataForBinding) {
-        _dataForBing.value = newData
+
         _dataForBing.value?.let {
             val data = it.copy(
+                labelHaut = newData.labelHaut?:it.labelHaut,
+                labelBas = newData.labelBas?:it.labelBas,
                 resultatHaut = newData.resultatHaut?:it.resultatHaut,
                 resultatBas = newData.resultatBas?:it.resultatBas)
             _dataForBing.value = data
         }
+
     }
 }

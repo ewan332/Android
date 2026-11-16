@@ -11,5 +11,5 @@ data class DataForBinding(
         get()= String.format("%2f",resultatBas ?:0.0)
 
     val resultatHautFormatted: String
-    get()= String.format("%2f",resultatHaut)
+    get()= String.format("%2f",resultatHaut?:0.0)
 }

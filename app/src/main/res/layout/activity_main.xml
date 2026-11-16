@@ -15,11 +15,12 @@
                               android:layout_height="wrap_content" android:layout_gravity="center"
                               android:layout_margin="20dp">
                     <TextView android:layout_width="40dp" android:layout_height="wrap_content"
-                              android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/euro"
+                              android:textAppearance="?android:attr/textAppearanceMedium" android:text="@{infoIhm.dataForBing.labelHaut}"
                               android:id="@+id/textViewHaut" android:layout_weight="10"/>
+
                     <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
                               android:inputType="numberDecimal" android:ems="10" android:id="@+id/editTextHaut"
-                              android:layout_weight="10" tools:text="@{infoIhm.dataForBing.resultatHautFormatted}"/>
+                              android:layout_weight="10" android:text="@{infoIhm.dataForBing.resultatHautFormatted}"/>
                 </LinearLayout>
                 <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
                               android:layout_height="wrap_content" android:layout_gravity="center"
@@ -37,7 +38,7 @@
                               android:layout_height="wrap_content" android:layout_gravity="center"
                               android:layout_margin="20dp">
                     <TextView android:layout_width="40dp" android:layout_height="wrap_content"
-                              android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/dollar"
+                              android:textAppearance="?android:attr/textAppearanceMedium" android:text="@{infoIhm.dataForBing.labelBas}"
                               android:id="@+id/textViewBas" android:layout_weight="10"/>
                     <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
                               android:inputType="number|numberDecimal" android:ems="10" android:id="@+id/editTextBas"
@@ -53,15 +54,16 @@
                         <RadioButton
                                 android:text="@string/Euro_Dollar"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" android:id="@+id/radioButton"/>
+                                android:layout_height="wrap_content" android:id="@+id/euroDollar"
+                        />
                         <RadioButton
                                 android:text="@string/Euro_Yen"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" android:id="@+id/radioButton2"/>
+                                android:layout_height="47dp" android:id="@+id/EuroYen"/>
                         <RadioButton
                                 android:text="@string/Dollar_Yen"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" android:id="@+id/radioButton3"/>
+                                android:layout_height="wrap_content" android:id="@+id/DollarYen"/>
                     </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
